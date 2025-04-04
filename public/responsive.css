@@ -13,12 +13,14 @@
     }
 
     .input-container {
-        width: 100%; /* Make input container take full width */
+        width: 100%;
         display: flex;
-        flex-direction: column; /* Stack inputs and button */
+        flex-direction: column;
         align-items: center;
-        gap: 3px;
+        gap: 5px; /* Increase gap between inputs and button */
+        margin-bottom: 10px; /* Add space below button */
     }
+    
 
     .input-container input {
         width: 90%; /* Make input field responsive */
@@ -42,6 +44,8 @@
     #error-message {
         font-size: 16px; /* Adjust display font size */
         width: 100%;
+        margin-top: 10px;
         padding: 5px;
+        text-align: center;
     }
 }
