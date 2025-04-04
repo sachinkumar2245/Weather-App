@@ -1,0 +1,47 @@
+/* Mobile Responsive Design */
+@media screen and (max-width: 480px) {
+    body {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .container {
+        width: 90%; /* Adjust width to fit smaller screens */
+        top: 150px; /* Adjust top spacing */
+        min-height: auto; /* Make height flexible */
+        padding: 15px; /* Add padding for better spacing */
+    }
+
+    .input-container {
+        width: 100%; /* Make input container take full width */
+        display: flex;
+        flex-direction: column; /* Stack inputs and button */
+        align-items: center;
+        gap: 3px;
+    }
+
+    .input-container input {
+        width: 90%; /* Make input field responsive */
+        font-size: 14px; /* Adjust font size */
+        padding: 8px; /* Increase padding for touch usability */
+        height: auto;
+    }
+
+    .input-container button {
+        width: 95%; /* Full-width button */
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #weather-info {
+        font-size: 16px; /* Adjust display font size */
+        width: 100%;
+        padding: 5px;
+    }
+
+    #error-message {
+        font-size: 16px; /* Adjust display font size */
+        width: 100%;
+        padding: 5px;
+    }
+}

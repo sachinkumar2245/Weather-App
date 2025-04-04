@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #93a5cf, #e4efe9);
+}
+
+.container {
+  position: relative;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  width: 330px;
+  min-height: 150px;
+  flex-wrap: wrap;
+  background-color: #47a992;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.input-container {
+  /* border: 2px solid red; */
+  margin: 3px;
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 6px;
+  margin-left: 3px;
+  height: 20px;
+  font-size: 15px;
+  background-color: #d9dfc6;
+}
+
+.input-container input:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.input-container button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  height: 32px;
+  font-size: 15px;
+  margin: 3px;
+  background-color: #6c48c5;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 6px 12px; /* Add a defined padding */
+}
+
+.input-container button:hover {
+  background-color: #5a3ba8;
+  transform: translateY(-2px);
+
+  /* transform: scale(1.05);
+    padding: 6.2px 12.2px; Slightly increase padding to maintain text size */
+}
+
+#weather-info {
+  width: 95%;
+  min-height: 20px;
+  margin: 4px;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: 540;
+  color: rgb(239, 231, 231);
+  text-align: center;
+}
+
+#error-message {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  min-height: 20px;
+  margin: 4px;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: 540;
+  color: red;
+  text-align: center;
+}
+
+/* beautifying the weather description text */
+
+
+#city-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#temperature {
+  font-size: 20px;
+  color: #e0f7fa;
+}
+
+#description {
+  font-size: 18px;
+  color: #270595;
+  font-weight: bolder;
+}
+
+/* hidden class for the display for the weather data */
+.hidden {
+  display: none;
+}
